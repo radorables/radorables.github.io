@@ -1,0 +1,17 @@
+# Site settings
+title: radorables
+description:
+url: "http://www.radorables.com"
+
+# User settings
+username: radorables
+email: info@radorables.com
+
+# Global settings
+icon_size: 58
+
+# Google analytics tracking ID
+google_analytics_tracking_id: UA-223301828-1
+
+plugins:
+  - jekyll-seo-tag
