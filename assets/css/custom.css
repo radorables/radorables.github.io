@@ -44,13 +44,13 @@ body {
 	line-height: 1.5;
 }
 
-.description button {
+.description a{
     border:1px solid #2596be;
     background:#2596be;
-    border-radius: 0;
+    border-radius: 2;
     color:#fff;
 }
-.description button:hover {
+.description a:hover {
 	border:1px solid #fff;
     background:#fff;
     color:#000;
