@@ -1,52 +1,65 @@
+@font-face {
+    font-family: 'Baloo Bhaijaan';
+    src: url('../../assets/fonts/Baloo Bhaijaan Regular 400.ttf');
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
 body {
     padding: 0;
     margin: 0;
-    background: #f2f6e9;
+    background: #ffd996;
+    font-family: "Baloo Bhaijaan", sans-serif !important
 }
 .navbar {
-    background:#6ab446;
+    background:#ffd996;
 }
 .nav-link,
 .navbar-brand {
-    color: #fff;
+    color: #431b00;
     cursor: pointer;
 }
 .nav-link {
     margin-right: 1em !important;
 }
 .nav-link:hover {
-    color: #000;
+    color: #ff5e0e;
 }
 .navbar-collapse {
     justify-content: flex-end;
 }
 
 .header {
-    background-image: url('../../assets/img/header.jpg');
+    background-image: url('/assets/img/Radorables_Outside.png');
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
-.description {
+.descriptionlogo {
+  max-width: 50%;
+  max-height: 50%;
 	left: 25%;
-	position: absolute;
-	top: 75%;
-	transform: translate(-50%, -55%);
+	top: 10%;
+  position: relative;
 	text-align: center;
 }
-.description h1 {
-	color: #6ab446;
-}
-.description p {
-	color: #fff;
-	font-size: 1.3rem;
-	line-height: 1.5;
+
+.description {
+	left: -35%;
+	top: 80%;
+  position: relative;
+	text-align: center;
 }
 
 .description a{
-    border:1px solid #2596be;
-    background:#2596be;
+    border:1px solid #19b0db;
+    background:#19b0db;
     border-radius: 2;
     color:#fff;
 }
@@ -54,6 +67,15 @@ body {
 	border:1px solid #fff;
     background:#fff;
     color:#000;
+}
+
+.btn-xlarge {
+    padding: 12px 100px;
+    font-size: 45px; //change this to your desired size
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
 }
 
 @media (max-width: 575.98px) {
@@ -77,4 +99,28 @@ body {
     .features {
         margin: 0;
     }
+}
+
+#nav-social {
+ display:flex;
+ flex-direction:row;
+ margin-left:10px;
+ margin-right:20px;
+ width:max-content
+}
+
+.social-icon {
+ color:#431b00;
+ padding:20px 10px;
+ transition:.3s
+}
+.social-icon:hover {
+ caret-color:transparent;
+ color:#ff5e0e
+}
+
+@media only screen and (min-width: 992px) {
+ .social-icon {
+  padding:20px
+ }
 }
