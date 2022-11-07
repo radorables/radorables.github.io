@@ -2,20 +2,30 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	{% include head.html %}
 	<body>
-		{% include navigation.html %}
+		<div class="radorables">
+		<section id="top" class="container">
+			<div class="row">
+				{% include navigation.html %}
+				<div class="homeimg">
+				    <img src="assets/img/Radorables_Inside.png">
+				</div>
+			</div>
+		</section>
 
 		{% for page in site.pages %}
 			{% if page.section-type == "default" %}
-				<!-- {{ page.title }} Section -->
 				<section id="{{ page.title }}" class="container content-section text-center">
 						<div class="row">
+							<div class="d-flex justify-content-left"><p class="h1"> {{ page.title }} </p></div>
 									{{ page.content | markdownify }}
 						</div>
+						<hr class="gray-line mb-5">
 				</section>
 				{% endif %}
 		{% endfor %}
-		
+
 		{% include js.html %}
 		{% include google-analytics.html %}
+		</div>
 	</body>
 </html>
