@@ -8,8 +8,6 @@ img {
     max-height: 100%;
 }
 
-
-
 body {
     padding: 0;
     margin: 0;
@@ -78,29 +76,6 @@ body {
             border-radius: 8px;
 }
 
-@media (max-width: 575.98px) {
-    .description {
-        left: 0;
-        padding: 0 15px;
-        position: absolute;
-        top: 10%;
-        transform: none;
-        text-align: center;
-    }
-
-    .description h1 {
-        font-size: 2em;
-    }
-
-    .description p {
-        font-size: 1.2rem;
-    }
-
-    .features {
-        margin: 0;
-    }
-}
-
 #nav-social {
  display:flex;
  flex-direction:row;
@@ -119,8 +94,38 @@ body {
  color:#ff5e0e
 }
 
+.list-group-item.active {
+	color: #000;
+	background-color: #e5c387;
+	border-color: #e5c387;
+}
+
+.list-group-item {
+	position: relative;
+	color: #000;
+	text-decoration: none;
+	background-color: #ffe0ab;
+  border-color: #e5c387;
+}
+
 @media only screen and (min-width: 992px) {
  .social-icon {
   padding:20px
  }
+}
+
+
+@media (max-width: 767px) {
+  .description {
+      left: 0%;
+      top: 92%;
+      position: relative;
+      text-align: center;
+      transform: none;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+  }
 }
