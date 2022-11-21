@@ -40,6 +40,11 @@ body {
   color: #ff5e0e;
 }
 
+.text--highlight {
+ color:#ff5e0e;
+ font-size: 135%;
+}
+
 .header {
     background-image: url('/assets/img/Radorables_Outside.png');
     background-size: cover;
