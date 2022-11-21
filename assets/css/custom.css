@@ -32,6 +32,14 @@ body {
     justify-content: flex-end;
 }
 
+.h1 {
+  color: #ff5e0e;
+}
+
+.h3 {
+  color: #ff5e0e;
+}
+
 .header {
     background-image: url('/assets/img/Radorables_Outside.png');
     background-size: cover;
