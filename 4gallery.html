@@ -3,3 +3,35 @@ layout: null
 section-type: default
 title: GALLERY
 ---
+<div class="container">
+    <div class="row">
+      <div class="col-4">
+          <div class="input-group mb-3">
+              <input type="number" class="form-control" min="0" step="1" placeholder="show # radorable" id="nftfilter" aria-label="show # radorable" aria-describedby="show # radorable">
+              <div class="input-group-append">
+                <button id="nftbtn" type="button" class="btn btn-outline-secondary" onclick="javascript:nftshowbtn()">show</button>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container-lg">
+        <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3" id="nftgallery">
+          <!-- random galery here -->
+        </div>
+      </div>
+   </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="nftmodal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+         <img src="" class="modal-img" alt="not found">
+      </div>
+    </div>
+  </div>
+</div>
