@@ -1,7 +1,7 @@
 function generateGallery(){
 	for (let i = 0; i < 9; i++) {
 		randomINT = getRandomInt(1, 20);
-		console.log("generate random Gallery: " + randomINT);
+		//console.log("generate random Gallery: " + randomINT);
 		const divString = '<div class="col"><img src="./assets/img/nfts/' + randomINT.toString() + '.png" class="gallery-item" alt="gallery"></div>';
 		document.getElementById("nftgallery").innerHTML +=  divString;
 	}
