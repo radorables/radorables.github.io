@@ -53,17 +53,17 @@ body {
 }
 
 .descriptionlogo {
-  max-width: 50%;
-  max-height: 50%;
-	left: 25%;
+  max-width: 40%;
+  max-height: 40%;
+	left: 30%;
 	top: 10%;
   position: relative;
 	text-align: center;
 }
 
 .description {
-	left: -35%;
-	top: 80%;
+	left: 0%;
+	top: 40%;
   position: relative;
 	text-align: center;
 }
@@ -81,12 +81,12 @@ body {
 }
 
 .btn-xlarge {
-    padding: 12px 100px;
+    padding: 12px 50px;
     font-size: 45px; //change this to your desired size
     line-height: normal;
-    -webkit-border-radius: 8px;
-       -moz-border-radius: 8px;
-            border-radius: 8px;
+    -webkit-border-radius: 15px;
+       -moz-border-radius: 15px;
+            border-radius: 15px;
 }
 
 #nav-social {
