@@ -45,48 +45,10 @@ body {
  font-size: 150%;
 }
 
-.header {
-    background-image: url('/assets/img/Radorables_Outside.png');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.descriptionlogo {
-  max-width: 40%;
-  max-height: 40%;
-	left: 30%;
-	top: 10%;
-  position: relative;
-	text-align: center;
-}
-
-.description {
-	left: 0%;
-	top: 40%;
-  position: relative;
-	text-align: center;
-}
-
-.description a{
-    border:1px solid #19b0db;
-    background:#19b0db;
-    border-radius: 2;
-    color:#fff;
-}
-.description a:hover {
-	border:1px solid #fff;
-    background:#fff;
-    color:#000;
-}
-
-.btn-xlarge {
-    padding: 12px 50px;
-    font-size: 45px; //change this to your desired size
-    line-height: normal;
-    -webkit-border-radius: 15px;
-       -moz-border-radius: 15px;
-            border-radius: 15px;
+.enterimage {
+  position: fixed;
+  left: 0%;
+  top: 0%;
 }
 
 #nav-social {
@@ -125,20 +87,4 @@ body {
  .social-icon {
   padding:20px
  }
-}
-
-
-@media (max-width: 767px) {
-  .description {
-      left: 0%;
-      top: 92%;
-      position: relative;
-      text-align: center;
-      transform: none;
-  }
-
-  .btn {
-    display: block;
-    width: 100%;
-  }
 }

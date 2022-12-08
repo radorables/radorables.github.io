@@ -1,4 +1,4 @@
-function generateGallery(){
+/* function generateGallery(){
 	for (let i = 0; i < 9; i++) {
 		randomINT = getRandomInt(1, 20);
 		//console.log("generate random Gallery: " + randomINT);
@@ -39,3 +39,4 @@ function getRandomInt(min, max) {
 	max = Math.floor(max);
 	return Math.floor(Math.random() * (max - min) + min);
 }
+*/
