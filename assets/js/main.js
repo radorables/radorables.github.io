@@ -1,8 +1,8 @@
-/* function generateGallery(){
+function generateGallery(){
 	for (let i = 0; i < 9; i++) {
-		randomINT = getRandomInt(1, 20);
+		randomINT = getRandomInt(1, 10000);
 		//console.log("generate random Gallery: " + randomINT);
-		const divString = '<div class="col"><img src="./assets/img/nfts/' + randomINT.toString() + '.png" class="gallery-item" alt="gallery"></div>';
+		const divString = '<div class="col"><img src="./assets/img/nfts/' + randomINT.toString() + '.jpg" class="gallery-item" alt="gallery"></div>';
 		document.getElementById("nftgallery").innerHTML +=  divString;
 	}
 }
@@ -19,8 +19,10 @@ function nftshowbtn(){
 	//const input = document.querySelector(".form-control");
 	const input = document.getElementById("nftfilter");
 	let filter = input.value;
-	let path = 'assets/img/nfts/' + filter + '.png'
-	document.querySelector(".modal-img").src = path;
+	let nftpath = 'assets/img/nfts/' + filter + '.jpg'
+  let traitpath = 'assets/img/traitcards/traitcard_' + filter + '.png'
+	document.querySelector(".modal-nft-img").src = nftpath;
+  document.querySelector(".modal-card-img").src = traitpath;
 	searchModal.show();
 }
 
@@ -28,7 +30,7 @@ function nftshowbtn(){
 document.addEventListener("click",function (e){
 	if(e.target.classList.contains("gallery-item")){
 		 const src = e.target.getAttribute("src");
-		 document.querySelector(".modal-img").src = src;
+		 document.querySelector(".modal-nft-img").src = src;
 		 const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
 		 myModal.show();
 	}
@@ -39,4 +41,3 @@ function getRandomInt(min, max) {
 	max = Math.floor(max);
 	return Math.floor(Math.random() * (max - min) + min);
 }
-*/
