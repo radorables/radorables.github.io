@@ -30,7 +30,10 @@ function nftshowbtn(){
 document.addEventListener("click",function (e){
 	if(e.target.classList.contains("gallery-item")){
 		 const src = e.target.getAttribute("src");
+		 const filename = src.replace(/^.*[\\\/]/, '')
+		 const traitpath = 'assets/img/traitcards/traitcard_' + filename.replace(/\.[^.]+$/, '.png');
 		 document.querySelector(".modal-nft-img").src = src;
+		 document.querySelector(".modal-card-img").src = traitpath;
 		 const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
 		 myModal.show();
 	}
