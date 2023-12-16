@@ -20,9 +20,9 @@ function nftshowbtn(){
 	const input = document.getElementById("nftfilter");
 	let filter = input.value;
 	let nftpath = 'assets/img/nfts/' + filter + '.jpg'
-  let traitpath = 'assets/img/traitcards/traitcard_' + filter + '.png'
+    let traitpath = 'assets/img/pfp/' + filter + '.jpg'
 	document.querySelector(".modal-nft-img").src = nftpath;
-  document.querySelector(".modal-card-img").src = traitpath;
+  	document.querySelector(".modal-card-img").src = traitpath;
 	searchModal.show();
 }
 
@@ -31,9 +31,9 @@ document.addEventListener("click",function (e){
 	if(e.target.classList.contains("gallery-item")){
 		 const src = e.target.getAttribute("src");
 		 const filename = src.replace(/^.*[\\\/]/, '')
-		 //const traitpath = 'assets/img/traitcards/traitcard_' + filename.replace(/\.[^.]+$/, '.png');
+		 const traitpath = 'assets/img/pfp/' + filename.replace(/\.[^.]+$/, '.jpg');
 		 document.querySelector(".modal-nft-img").src = src;
-		 //document.querySelector(".modal-card-img").src = traitpath;
+		 document.querySelector(".modal-card-img").src = traitpath;
 		 const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
 		 myModal.show();
 	}
